@@ -37,19 +37,24 @@ body {
 .game-egg {
   width: 550px;
   height: 700px;
-  background-color: #CECBE0;
-  border: 3px solid #FFC33C;
+  background-color: #1EA6A5;
+  border: 8px solid #252681;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  
 }
 
 .screen {
-    height: 20rem;
-    width: 20rem;
-    border: 5px solid #f1f1f1;
+    height: 18rem;
+    width: 18rem;
+    margin-top: 7rem;
+    border: 6px solid #252681;
+    box-shadow: 0 0 0 10px #F6A220, 0 0 0 16px #252681;
+    border-radius: 20px;
     background-image: url(/IMG/screen-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -62,9 +67,30 @@ body {
     gap: 1rem;
 }
 
-.button {
+.screen-button {
     height: 2rem;
     width: 10rem;
     background-color: #FFC33C;
-   
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  width: 20rem;
+  margin-top: 4rem;
+}
+
+.buttons-button {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 5px solid #252681;
+  background-color: #C64565;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.buttons__button-2 {
+  align-self: flex-end;
 }
