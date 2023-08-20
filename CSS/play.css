@@ -71,10 +71,13 @@ a {
     gap: 1rem;
 }
 
-.screen-button {
-    height: 2rem;
-    width: 10rem;
-    background-color: #FFC33C;
+.screen__mochi {
+  height: 4rem;
+  width: 4rem;
+  background-color: #F6A220;
+  border-radius: 10px;
+  margin-top: 6rem;
+  animation: play;
 }
 
 .buttons {
@@ -97,4 +100,27 @@ a {
 
 .buttons__button-2 {
   align-self: flex-end;
+}
+
+
+
+/* TEST */
+
+.screen:has(~ .buttons > .buttons__button-1:active) > .screen__mochi {
+  animation: play .5s infinite ease-in-out;
+  }
+
+@keyframes play {
+  0% {
+    translate: 0;
+  }
+
+  50% {
+    transform: 0 -100px;
+    rotate: y -360deg;
+  }
+
+  100% {
+    translate: 0 -100px;
+  }
 }
