@@ -72,12 +72,12 @@ a {
 }
 
 .screen__mochi {
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 10px;
   margin-top: 6rem;
   animation: play;
-  background-image: url(/IMG/emo1.png);
+  background-image: url(/IMG/emo2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -110,12 +110,14 @@ a {
 /* TEST */
 
 .screen:has(~ .buttons > .buttons__button-1:active) > .screen__mochi {
-  animation: play .5s infinite ease-in-out;
+  animation: play .5s infinite ease-in-out alternate;
+  background-image: url(/IMG/emo1.png);
   }
 
 @keyframes play {
   0% {
     translate: 0;
+    
   }
 
   50% {
