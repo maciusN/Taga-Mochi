@@ -20,28 +20,28 @@ body {
 }
 
 a {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 
 /* HEADING */
 .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .line {
-    font-size: 3rem;
-    color: #FFC33C;
+  font-size: 3rem;
+  color: #ffc33c;
 }
 
 /* TAGA MOCHI DESIGN */
 .game-egg {
   width: 550px;
   height: 700px;
-  background-color: #1EA6A5;
+  background-color: #1ea6a5;
   border: 8px solid #252681;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   margin-top: 3rem;
@@ -49,38 +49,47 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .screen {
-    height: 18rem;
-    width: 18rem;
-    margin-top: 7rem;
-    border: 6px solid #252681;
-    box-shadow: 0 0 0 10px #F6A220, 0 0 0 16px #252681;
-    border-radius: 20px;
-    background-image: url(/IMG/screen-background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
+  height: 18rem;
+  width: 18rem;
+  margin-top: 7rem;
+  border: 6px solid #252681;
+  box-shadow: 0 0 0 10px #f6a220, 0 0 0 16px #252681;
+  border-radius: 20px;
+  background-image: url(/IMG/screen-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
 }
 
 .screen__mochi {
   height: 5rem;
   width: 5rem;
   border-radius: 10px;
-  margin-top: 6rem;
-  animation: play;
+  margin-top: 9rem;
   background-image: url(/IMG/emo2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  animation: default .5s infinite ease-in-out alternate;
+}
+
+.screen__sushi {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 10px;
+  margin-top: 9rem;
+  background-image: url(/IMG/sushi.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
 }
 
 .buttons {
@@ -96,28 +105,53 @@ a {
   width: 5rem;
   border-radius: 50%;
   border: 5px solid #252681;
-  background-color: #C64565;
+  background-color: #c64565;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
+}
+
+.buttons-button:active {
+  box-shadow: inset 0px 0px 6px #414141;
 }
 
 .buttons__button-2 {
   align-self: flex-end;
 }
 
-
-
-/* TEST */
-
 .screen:has(~ .buttons > .buttons__button-1:active) > .screen__mochi {
-  animation: play .5s infinite ease-in-out alternate;
+  animation: play 0.5s infinite ease-in-out alternate;
   background-image: url(/IMG/emo1.png);
+}
+
+.screen:has(~ .buttons > .buttons__button-2:active) > .screen__mochi {
+  animation: feed .5s 1.3s infinite ease-in-out alternate;
+  background-image: url(/IMG/emo4.png);
+}
+
+.screen:has(~ .buttons > .buttons__button-2:active) > .screen__sushi {
+  animation: sushi 1s 1 ease-in-out alternate;
+  background-image: url(/IMG/sushi.png);
+  display: inline-block;
+}
+
+.screen:has(~ .buttons > .buttons__button-3:focus) > .screen__mochi {
+  animation: sleep 1s .5s ease-in-out forwards;
+  background-image: url(/IMG/emo3.png);
+}
+
+@keyframes default {
+  0% {
+    translate: 50px;
   }
+
+  100% {
+    translate: 100px;
+  }
+}
 
 @keyframes play {
   0% {
     translate: 0;
-    
   }
 
   50% {
@@ -127,5 +161,35 @@ a {
 
   100% {
     translate: 0 -100px;
+  }
+}
+
+@keyframes feed {
+  0% {
+    translate: 15px;
+  }
+
+  100% {
+    translate: 0;
+  }
+}
+
+@keyframes sushi {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes sleep {
+  0% {
+    rotate: 0;
+  }
+
+  100% {
+    rotate: z 90deg;
   }
 }
