@@ -1,6 +1,10 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
 /* RESET */
 * {
   margin: 0;
@@ -12,7 +16,10 @@
 body {
   height: 100vh;
   width: 100%;
-  background-color: #ff4c65;
+  background-image: url(/IMG/bsckground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,8 +40,15 @@ a {
 }
 
 .line {
-  font-size: 3rem;
+  font-family: 'Reggae One', cursive;
+  font-size: 5rem;
   color: #ffc33c;
+  text-shadow: 5px 5px 5px #252681;
+  line-height: 4rem;
+}
+
+.heading__line-2 {
+  font-size: 1rem;
 }
 
 /* TAGA MOCHI DESIGN */
@@ -58,7 +72,7 @@ a {
   border: 6px solid #252681;
   box-shadow: 0 0 0 10px #f6a220, 0 0 0 16px #252681;
   border-radius: 20px;
-  background-image: url(/IMG/screen-background.jpg);
+  background-image: url(/IMG/screen-background-2.avif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,19 +86,19 @@ a {
   height: 5rem;
   width: 5rem;
   border-radius: 10px;
-  margin-top: 9rem;
+  margin-top: 12rem;
   background-image: url(/IMG/emo2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  animation: default .5s infinite ease-in-out alternate;
+  animation: start .5s infinite ease-in-out alternate;
 }
 
 .screen__sushi {
   height: 5rem;
   width: 5rem;
   border-radius: 10px;
-  margin-top: 9rem;
+  margin-top: 12rem;
   background-image: url(/IMG/sushi.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -111,7 +125,7 @@ a {
 }
 
 .buttons-button:active {
-  box-shadow: inset 0px 0px 6px #414141;
+  box-shadow: inset 0px 0px 6px #252525;
 }
 
 .buttons__button-2 {
@@ -139,13 +153,23 @@ a {
   background-image: url(/IMG/emo3.png);
 }
 
-@keyframes default {
+.footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  gap: 10rem;
+  color: rgb(98, 92, 105);
+}
+
+@keyframes start {
   0% {
-    translate: 50px;
+    rotate: 3deg;
   }
 
   100% {
-    translate: 100px;
+    rotate: -3deg;
   }
 }
 
@@ -166,11 +190,11 @@ a {
 
 @keyframes feed {
   0% {
-    translate: 15px;
+    translate: 0;
   }
 
   100% {
-    translate: 0;
+    translate: 15px;
   }
 }
 

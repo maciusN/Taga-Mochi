@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
     <title>Taga Mochi</title>
-</head>
-<body>
+  </head>
+  <body>
     <a class="heading-link" href="index.html">
         <div class="heading">
-            <h1 class="heading__line-1 line">Taga</h1>
-            <h2 class="heading__line2 line">Mochi</h2>
+          <h1 class="heading__line-1 line">TAGA MOCHI</h1>
+          <h2 class="heading__line-2 line">- TOKYO NIGHTLIFE -</h2>
         </div>
-    </a>
-    
-    
+      </a>
+
     <div class="game-egg">
-        <div class="game-egg__screen screen">
-            <button class="screen__button-start screen-button"><a href="/HTML/play.html">START</a></button>
-            <button class="screen__button-how-to-play screen-button">HOW TO PLAY</button>
-            <button class="screen__button-about-me screen-button">ABOUT ME</button>
+      <div class="game-egg__screen screen">
+        <button class="screen__button-start screen-button start-button">
+          <a class="start-button__link" href="/HTML/play.html">START</a>
+        </button>
+        <button class="screen__button-how-to-play screen-button">
+          HOW TO PLAY
+        </button>
+        <button class="screen__button-about-me screen-button">ABOUT ME</button>
+
+        <div class="screen__manual manual">
+          <p class="manual__start start-paragraph">
+            Press <button class="start-paragraph__button">START</button> to
+            start the game.
+          </p>
+          <p class="manual__play play-paragraph">
+            Press <button class="play-paragraph__button">PLAY</button> to play
+            with Mochi.
+          </p>
+          <p class="manual__feed feed-paragraph">
+            Press <button class="feed-paragraph__button">FEED</button> to feed
+            Mochi.
+          </p>
+          <p class="manual__sleep sleep-paragraph">
+            Press <button class="sleep-paragraph__button">SLEEP</button> to put
+            Mochi to sleep.
+          </p>
         </div>
 
-        <div class="game-egg__buttons buttons">
-            <button class="buttons__button-1 buttons-button">PLAY</button>
-            <button class="buttons__button-2 buttons-button">FEED</button>
-            <button class="buttons__button-3 buttons-button">SLEEP</button>
+        <div class="screen__about-me-info about-me-info">
+          <p class="about-me-info__text">
+            Hi, I'm an aspiring web developer currently living in Berlin, where
+            I'm studying web development at the Digital Career Institute. This
+            "Taga Mochi" is my final project for the "User Interface Basics"
+            module.
+          </p>
         </div>
+      </div>
+
+      <div class="game-egg__buttons buttons">
+        <button class="buttons__button-1 buttons-button">PLAY</button>
+        <button class="buttons__button-2 buttons-button">FEED</button>
+        <button class="buttons__button-3 buttons-button">SLEEP</button>
+      </div>
     </div>
-    
-    
 
-</body>
+    <div class="footer">
+        <p class="footer__copyright">© 2023 Copyright @ Maciej Nogaj</p>
+        <p class="footer__connect connect">
+          Connect: <a class="connect__link" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+  </body>
 </html>

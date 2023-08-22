@@ -1,6 +1,10 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
 /* RESET */
 * {
   margin: 0;
@@ -12,7 +16,10 @@
 body {
   height: 100vh;
   width: 100%;
-  background-color: #ff4c65;
+  background-image: url(/IMG/bsckground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,23 +32,30 @@ a {
 
 /* HEADING */
 .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .line {
-    font-size: 3rem;
-    color: #FFC33C;
+  font-family: 'Reggae One', cursive;
+  font-size: 5rem;
+  color: #DDB1B9;
+  text-shadow: 5px 5px 5px #252681;
+  line-height: 4rem;
+}
+
+.heading__line-2 {
+  font-size: 1rem;
 }
 
 /* TAGA MOCHI DESIGN */
 .game-egg {
   width: 550px;
   height: 700px;
-  background-color: #1EA6A5;
+  background-color: #56a5da;
   border: 8px solid #252681;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   margin-top: 3rem;
@@ -49,33 +63,105 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .screen {
-    height: 18rem;
-    width: 18rem;
-    margin-top: 7rem;
-    border: 6px solid #252681;
-    box-shadow: 0 0 0 10px #F6A220, 0 0 0 16px #252681;
-    border-radius: 20px;
-    background-image: url(/IMG/screen-background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
+  height: 18rem;
+  width: 18rem;
+  margin-top: 7rem;
+  border: 6px solid #252681;
+  box-shadow: 0 0 0 10px #DDB1B9, 0 0 0 16px #252681;
+  border-radius: 20px;
+  background-image: url(/IMG/screen-background-2.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem;
 }
 
-.screen-button {
-    height: 2rem;
-    width: 10rem;
-    background-color: #FFC33C;
+.screen:has(.screen__button-how-to-play:focus) > .screen__manual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.7rem;
+  height: 100%;
+  width: 100%;
+  background-color: #DDB1B9;
 }
+
+.screen:has(.screen__button-about-me:focus) > .screen__about-me-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.7rem;
+  height: 100%;
+  width: 100%;
+  background-color: #DDB1B9;
+}
+
+.screen__about-me-info {
+  display: none;
+  justify-content: center;
+}
+
+.screen:has(.screen__button-about-me:focus) > .screen__button-start,
+.screen:has(.screen__button-about-me:focus) > .screen__button-how-to-play {
+  display: none;
+}
+
+.screen__about-me-info p {
+  font-size: .6rem;
+  line-height: 1rem;
+}
+
+
+.screen-button {
+  height: 2rem;
+  width: 10rem;
+  background-color: #DDB1B9;
+}
+
+.screen:has(.screen__button-how-to-play:focus) > .screen__button-start,
+.screen:has(.screen__button-how-to-play:focus) > .screen__button-about-me {
+  display: none;
+}
+
+.start-button__link {
+  color: black;
+}
+
+.screen__manual {
+  display: none;
+  justify-content: center;
+}
+
+.screen__manual p {
+  font-size: .5rem;
+}
+
+.start-paragraph__button {
+  padding: .3rem;
+  font-size: .5rem;
+  background-color: #DDB1B9;
+}
+
+.play-paragraph__button, .feed-paragraph__button, .sleep-paragraph__button {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  font-size: .4rem;
+  font-weight: 100;
+  background-color: #cc647c;
+}
+
 
 .buttons {
   display: flex;
@@ -90,11 +176,25 @@ a {
   width: 5rem;
   border-radius: 50%;
   border: 5px solid #252681;
-  background-color: #C64565;
+  background-color: #cc647c;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
 
+.buttons-button:active {
+  box-shadow: inset 0px 0px 6px #252525;
+}
+
 .buttons__button-2 {
   align-self: flex-end;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  gap: 10rem;
+  color: rgb(98, 92, 105);
 }
