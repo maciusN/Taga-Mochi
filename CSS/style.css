@@ -1,9 +1,9 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barrio&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
 
 /* RESET */
 * {
@@ -40,9 +40,9 @@ a {
 }
 
 .line {
-  font-family: 'Reggae One', cursive;
+  font-family: "Reggae One", cursive;
   font-size: 5rem;
-  color: #DDB1B9;
+  color: #ddb1b9;
   text-shadow: 5px 5px 5px #252681;
   line-height: 4rem;
 }
@@ -70,7 +70,7 @@ a {
   width: 18rem;
   margin-top: 7rem;
   border: 6px solid #252681;
-  box-shadow: 0 0 0 10px #DDB1B9, 0 0 0 16px #252681;
+  box-shadow: 0 0 0 10px #ddb1b9, 0 0 0 16px #252681;
   border-radius: 20px;
   background-image: url(/IMG/screen-background-2.avif);
   background-position: center;
@@ -93,7 +93,7 @@ a {
   padding: 0.7rem;
   height: 100%;
   width: 100%;
-  background-color: #DDB1B9;
+  background-color: #ddb1b9;
 }
 
 .screen:has(.screen__button-about-me:focus) > .screen__about-me-info {
@@ -104,7 +104,7 @@ a {
   padding: 0.7rem;
   height: 100%;
   width: 100%;
-  background-color: #DDB1B9;
+  background-color: #ddb1b9;
 }
 
 .screen__about-me-info {
@@ -118,15 +118,14 @@ a {
 }
 
 .screen__about-me-info p {
-  font-size: .6rem;
+  font-size: 0.6rem;
   line-height: 1rem;
 }
-
 
 .screen-button {
   height: 2rem;
   width: 10rem;
-  background-color: #DDB1B9;
+  background-color: #ddb1b9;
 }
 
 .screen:has(.screen__button-how-to-play:focus) > .screen__button-start,
@@ -144,24 +143,25 @@ a {
 }
 
 .screen__manual p {
-  font-size: .5rem;
+  font-size: 0.5rem;
 }
 
 .start-paragraph__button {
-  padding: .3rem;
-  font-size: .5rem;
-  background-color: #DDB1B9;
+  padding: 0.3rem;
+  font-size: 0.5rem;
+  background-color: #ddb1b9;
 }
 
-.play-paragraph__button, .feed-paragraph__button, .sleep-paragraph__button {
+.play-paragraph__button,
+.feed-paragraph__button,
+.sleep-paragraph__button {
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
-  font-size: .4rem;
+  font-size: 0.4rem;
   font-weight: 100;
   background-color: #c64565;
 }
-
 
 .buttons {
   display: flex;

@@ -1,9 +1,9 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barrio&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
 
 /* RESET */
 * {
@@ -40,9 +40,9 @@ a {
 }
 
 .line {
-  font-family: 'Reggae One', cursive;
+  font-family: "Reggae One", cursive;
   font-size: 5rem;
-  color: #DDB1B9;
+  color: #ddb1b9;
   text-shadow: 5px 5px 5px #252681;
   line-height: 4rem;
 }
@@ -70,7 +70,7 @@ a {
   width: 18rem;
   margin-top: 7rem;
   border: 6px solid #252681;
-  box-shadow: 0 0 0 10px #DDB1B9, 0 0 0 16px #252681;
+  box-shadow: 0 0 0 10px #ddb1b9, 0 0 0 16px #252681;
   border-radius: 20px;
   background-image: url(/IMG/screen-background-2.avif);
   background-position: center;
@@ -79,7 +79,6 @@ a {
   border-radius: 10px;
   display: flex;
   justify-content: center;
-
 }
 
 .screen__mochi {
@@ -91,7 +90,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  animation: start .5s infinite ease-in-out alternate;
+  animation: start 0.5s infinite ease-in-out alternate;
 }
 
 .screen__sushi {
@@ -138,7 +137,7 @@ a {
 }
 
 .screen:has(~ .buttons > .buttons__button-2:active) > .screen__mochi {
-  animation: feed .5s 1.3s infinite ease-in-out alternate;
+  animation: feed 0.5s 1.3s infinite ease-in-out alternate;
   background-image: url(/IMG/emo4.png);
 }
 
@@ -149,7 +148,7 @@ a {
 }
 
 .screen:has(~ .buttons > .buttons__button-3:focus) > .screen__mochi {
-  animation: sleep .5s .5s ease-in-out forwards;
+  animation: sleep 0.5s 0.5s ease-in-out forwards;
   background-image: url(/IMG/emo3.png);
 }
 
