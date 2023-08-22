@@ -42,7 +42,7 @@ a {
 .line {
   font-family: 'Reggae One', cursive;
   font-size: 5rem;
-  color: #ffc33c;
+  color: #DDB1B9;
   text-shadow: 5px 5px 5px #252681;
   line-height: 4rem;
 }
@@ -55,8 +55,8 @@ a {
 .game-egg {
   width: 550px;
   height: 700px;
-  background-color: #1ea6a5;
-  border: 8px solid #252681;
+  background-color: #56a5da;
+  border: 8px solid #47158a;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   margin-top: 3rem;
   display: flex;
@@ -70,7 +70,7 @@ a {
   width: 18rem;
   margin-top: 7rem;
   border: 6px solid #252681;
-  box-shadow: 0 0 0 10px #f6a220, 0 0 0 16px #252681;
+  box-shadow: 0 0 0 10px #DDB1B9, 0 0 0 16px #252681;
   border-radius: 20px;
   background-image: url(/IMG/screen-background-2.avif);
   background-position: center;
@@ -79,7 +79,7 @@ a {
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  z-index: 100;
+
 }
 
 .screen__mochi {
@@ -149,7 +149,7 @@ a {
 }
 
 .screen:has(~ .buttons > .buttons__button-3:focus) > .screen__mochi {
-  animation: sleep 1s .5s ease-in-out forwards;
+  animation: sleep .5s .5s ease-in-out forwards;
   background-image: url(/IMG/emo3.png);
 }
 

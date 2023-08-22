@@ -56,7 +56,7 @@ a {
   width: 550px;
   height: 700px;
   background-color: #56a5da;
-  border: 8px solid #252681;
+  border: 8px solid #47158a;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   margin-top: 3rem;
   display: flex;
@@ -159,7 +159,7 @@ a {
   width: 2rem;
   font-size: .4rem;
   font-weight: 100;
-  background-color: #cc647c;
+  background-color: #c64565;
 }
 
 
@@ -175,8 +175,8 @@ a {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
-  border: 5px solid #252681;
-  background-color: #cc647c;
+  border: 5px solid #47158a;
+  background-color: #c64565;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
