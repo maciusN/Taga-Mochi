@@ -1,8 +1,6 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Barrio&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
 
 /* RESET */
@@ -16,7 +14,7 @@
 body {
   height: 100vh;
   width: 100%;
-  background-image: url(/IMG/bsckground.jpg);
+  background-image: url("../IMG/bsckground.jpg"); /* Updated path */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,7 +84,7 @@ a {
   width: 5rem;
   border-radius: 10px;
   margin-top: 12rem;
-  background-image: url(/IMG/emo2.png);
+  background-image: url(../IMG/emo2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -98,7 +96,7 @@ a {
   width: 5rem;
   border-radius: 10px;
   margin-top: 12rem;
-  background-image: url(/IMG/sushi.png);
+  background-image: url(../IMG/sushi.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -133,23 +131,214 @@ a {
 
 .screen:has(~ .buttons > .buttons__button-1:active) > .screen__mochi {
   animation: play 0.5s infinite ease-in-out alternate;
-  background-image: url(/IMG/emo1.png);
+  background-image: url(../IMG/emo1.png);
 }
 
 .screen:has(~ .buttons > .buttons__button-2:active) > .screen__mochi {
   animation: feed 0.5s 1.3s infinite ease-in-out alternate;
-  background-image: url(/IMG/emo4.png);
+  background-image: url(../IMG/emo4.png);
 }
 
 .screen:has(~ .buttons > .buttons__button-2:active) > .screen__sushi {
   animation: sushi 1s 1 ease-in-out alternate;
-  background-image: url(/IMG/sushi.png);
+  background-image: url(../IMG/sushi.png);
   display: inline-block;
 }
 
 .screen:has(~ .buttons > .buttons__button-3:focus) > .screen__mochi {
   animation: sleep 0.5s 0.5s ease-in-out forwards;
-  background-image: url(/IMG/emo3.png);
+  background-image: url(../IMG/emo3.png);
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  gap: 10rem;
+  color: rgb(98, 92, 105);
+}
+
+@keyframes start {
+  0% {
+    rotate: 3deg;
+  }
+
+  100% {
+    rotate: -3deg;
+  }
+}
+
+@keyframes play {
+  0% {
+    translate: 0;
+  }
+
+  50% {
+    transform: 0 -100px;
+    rotate: y -360deg;
+  }
+
+  100% {
+    translate: 0 -100px;
+  }
+}
+
+@keyframes feed {
+  0% {
+    translate: 0;
+  }
+
+  100% {
+    translate: 15px;
+  }
+}
+
+@keyframes sushi {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes sleep {
+  0% {
+    rotate: 0;
+  }
+
+  100% {
+    rotate: z 90deg;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADING */
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.line {
+  font-family: "Reggae One", cursive;
+  font-size: 5rem;
+  color: #ddb1b9;
+  text-shadow: 5px 5px 5px #252681;
+  line-height: 4rem;
+}
+
+.heading__line-2 {
+  font-size: 1rem;
+}
+
+/* TAGA MOCHI DESIGN */
+.game-egg {
+  width: 550px;
+  height: 700px;
+  background-color: #56a5da;
+  border: 8px solid #47158a;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.screen {
+  height: 18rem;
+  width: 18rem;
+  margin-top: 7rem;
+  border: 6px solid #252681;
+  box-shadow: 0 0 0 10px #ddb1b9, 0 0 0 16px #252681;
+  border-radius: 20px;
+  background-image: url(../IMG/screen-background-2.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.screen__mochi {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 10px;
+  margin-top: 12rem;
+  background-image: url(../IMG/emo2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: start 0.5s infinite ease-in-out alternate;
+}
+
+.screen__sushi {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 10px;
+  margin-top: 12rem;
+  background-image: url(../IMG/sushi.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  width: 20rem;
+  margin-top: 4rem;
+}
+
+.buttons-button {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 5px solid #252681;
+  background-color: #c64565;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.buttons-button:active {
+  box-shadow: inset 0px 0px 6px #252525;
+}
+
+.buttons__button-2 {
+  align-self: flex-end;
+}
+
+.screen:has(~ .buttons > .buttons__button-1:active) > .screen__mochi {
+  animation: play 0.5s infinite ease-in-out alternate;
+  background-image: url(../IMG/emo1.png);
+}
+
+.screen:has(~ .buttons > .buttons__button-2:active) > .screen__mochi {
+  animation: feed 0.5s 1.3s infinite ease-in-out alternate;
+  background-image: url(../IMG/emo4.png);
+}
+
+.screen:has(~ .buttons > .buttons__button-2:active) > .screen__sushi {
+  animation: sushi 1s 1 ease-in-out alternate;
+  background-image: url(../IMG/sushi.png);
+  display: inline-block;
+}
+
+.screen:has(~ .buttons > .buttons__button-3:focus) > .screen__mochi {
+  animation: sleep 0.5s 0.5s ease-in-out forwards;
+  background-image: url(../IMG/emo3.png);
 }
 
 .footer {

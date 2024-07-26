@@ -13,10 +13,11 @@
   font-family: "Press Start 2P", cursive;
 }
 
+
 body {
   height: 100vh;
   width: 100%;
-  background-image: url(/IMG/bsckground.jpg);
+  background-image: url("../IMG/bsckground.jpg"); /* Updated path */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +73,7 @@ a {
   border: 6px solid #252681;
   box-shadow: 0 0 0 10px #ddb1b9, 0 0 0 16px #252681;
   border-radius: 20px;
-  background-image: url(/IMG/screen-background-2.avif);
+  background-image: url(../IMG/screen-background-2.avif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
