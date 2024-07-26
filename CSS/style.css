@@ -15,8 +15,7 @@
 
 
 body {
-  zoom: 74%;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-image: url("../IMG/bsckground.jpg");
   background-position: center;
@@ -34,7 +33,6 @@ a {
 
 /* HEADING */
 .heading {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +59,6 @@ a {
   background-color: #56a5da;
   border: 8px solid #47158a;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +68,7 @@ a {
 .screen {
   height: 18rem;
   width: 18rem;
-  margin-top: 7rem;
+  margin-top: 5rem;
   border: 6px solid #252681;
   box-shadow: 0 0 0 10px #ddb1b9, 0 0 0 16px #252681;
   border-radius: 20px;
@@ -171,7 +168,7 @@ a {
   justify-content: space-between;
   height: 7rem;
   width: 20rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .buttons-button {
