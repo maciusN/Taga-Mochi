@@ -15,9 +15,10 @@
 
 
 body {
-  height: 100vh;
+  zoom: 74%;
+  height: 100%;
   width: 100%;
-  background-image: url("../IMG/bsckground.jpg"); /* Updated path */
+  background-image: url("../IMG/bsckground.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,6 +34,7 @@ a {
 
 /* HEADING */
 .heading {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
